@@ -1,8 +1,6 @@
-FROM node:11.12.0-alpine as build-stage
+FROM node:10.15.3-alpine as build-stage
 ADD . /usr/src/app
 WORKDIR /usr/src/app
-RUN ls
-RUN pwd
 RUN npm --registry https://registry.npm.taobao.org install -g yarn
 RUN yarn install
 RUN yarn build

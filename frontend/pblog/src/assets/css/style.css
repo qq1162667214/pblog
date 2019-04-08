@@ -1,0 +1,665 @@
+/* Scrollbar */
+.overflow-scroll {
+  overflow: scroll;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+/* Widget Chart */
+.widget-chart-full-width .nvd3-svg {
+	margin: 0 -25px !important;
+	padding: 0 !important;
+	width: calc(100% + 100px) !important;
+	height: calc(100% + 30px) !important;
+}
+.nv-stacked-area-chart .nvd3-svg {
+	width: calc(100% + 12%) !important;
+}
+.widget-chart-sidebar .nvd3-svg {
+	margin: -25px !important;
+	width: calc(100% + 50px) !important;
+	height: calc(100% + 50px) !important;
+}
+
+
+/* Sidebar Minified Menu */
+.page-sidebar-minified .sidebar .sub-menu {
+  display: none;
+}
+.page-sidebar-minified .sidebar .nav li.has-sub > .sub-menu {
+  position: fixed;
+  margin-left: 60px;
+  margin-top: -40px;
+  width: 220px;
+  background: #242a31;
+  z-index: 1020;
+  padding: 9px 0 9px 39px;
+  left: 0;
+  top: auto;
+}
+.page-sidebar-minified .sidebar .nav li:hover > .sub-menu {
+  display: block !important;
+}
+.page-sidebar-minified .sidebar .nav .sub-menu li {
+  position: relative;
+}
+.page-sidebar-minified .sidebar .nav .sub-menu li:hover > .sub-menu {
+  margin: 0px;
+  left: 100%;
+  top: -9px;
+  position: absolute;
+}
+.page-sidebar-minified .sidebar .sub-menu > li:first-child:before {
+  top: 11px;
+  height: 2px;
+  width: 30px;
+  left: -39px;
+}
+.page-sidebar-minified .sidebar .sub-menu > li:first-child + li:before {
+  top: -10px;
+}
+.page-sidebar-minified .sidebar .sub-menu > li:first-child + li:last-child:before {
+  height: auto;
+  bottom: 10px;
+}
+.page-sidebar-minified .sidebar .nav .sub-menu > li > a .caret {
+  position: initial;
+  margin: 0;
+}
+.page-sidebar-minified .sidebar .sub-menu > li:before,
+.page-sidebar-minified .sidebar .sub-menu > li > a:after,
+.page-sidebar-minified .sidebar .sub-menu > li.has-sub > a:before {
+    background: #2d353c;
+}
+
+
+/* Vue Calendar */
+.__vev_calendar-wrapper .cal-wrapper {
+	width: auto;
+	padding: 15px;
+}
+.__vev_calendar-wrapper .cal-wrapper .cal-body .weeks .item {
+	font-weight: bold;
+	font-size: 12px;
+	color: #2d353c;
+	line-height: 20px;
+}
+.__vev_calendar-wrapper .cal-wrapper .cal-header .title {
+	font-size: 18px;
+	font-weight: 500;
+	color: #2d353c;
+}
+.__vev_calendar-wrapper .cal-wrapper .date-num {
+	line-height: 30px;
+	font-size: 13px !important;
+}
+.__vev_calendar-wrapper .cal-wrapper .cal-body .dates .item .is-today {
+	width: 4px;
+	margin-left: -2px;
+	background: #00acac !important;
+	margin-top: 10px;
+}
+.__vev_calendar-wrapper .cal-wrapper .cal-header {
+	padding-bottom: 15px;
+}
+.__vev_calendar-wrapper .cal-wrapper .cal-body .dates .item.event .date-num {
+	color: #242a30 !important;
+}
+.__vev_calendar-wrapper .cal-wrapper .cal-body .dates .item.event.selected-day .date-num {
+	color: #fff !important;
+}
+.__vev_calendar-wrapper .cal-wrapper .cal-body .dates .item.event .is-event {
+	background: #e2e7eb !important;
+	border-color: #e2e7eb !important;
+}
+.__vev_calendar-wrapper .cal-wrapper .cal-body .dates .item.event.selected-day .is-event {
+	background: #242a30 !important;
+	border-color: #242a30 !important;
+}
+.__vev_calendar-wrapper .cal-wrapper .cal-header > div {
+	padding: 1px;
+}
+.__vev_calendar-wrapper .events-wrapper {
+	display: none;
+}
+
+
+/* Vue Editor */
+.ve-select span {
+	font-size: 14px;
+}
+.vueditor [class^=icon] {
+	width: 14px;
+	height: 14px;
+}
+.ve-fullscreen {
+	height: auto !important;
+	border: none !important;
+	border-top: 1px solid #ccd0d4 !important;
+}
+.vueditor {
+	border: 1px solid #ccd0d4;
+}
+.ve-toolbar {
+	background: #f0f3f4;
+}
+.ve-toolbar div:hover {
+	background: #dcdfe0;
+}
+
+
+/* Vue Input Tag */
+.vue-input-tag-wrapper {
+	border-color: #d3d8de !important;
+	-webkit-appearance: none !important;
+}
+.email-to-input .vue-input-tag-wrapper {
+	border: none !important;
+	border-bottom: 1px solid #ccd0d4 !important;
+	padding: 7px 12px 9px 45px!important;
+}
+.vue-input-tag-wrapper .input-tag {
+	background: #348fe2 !important;
+	border-color: #348fe2 !important;
+	color: #fff !important;
+	border-radius: 3px !important;
+	padding: 2px 24px 2px 7px!important;
+	font-size: 12px !important;
+	margin: 2px 5px 2px 0 !important;
+	position: relative;
+	height: 24px;
+	line-height: 18px;
+}
+.vue-input-tag-wrapper .input-tag .remove {
+	color: #fff !important;
+	right: 2px!important;
+	line-height: 22px!important;
+	text-align: center!important;
+	top: 0!important;
+	margin: 0!important;
+	position: absolute;
+	width: 16px;
+}
+.vue-input-tag-wrapper .new-tag {
+	margin: 0 !important;
+	padding: 5px 5px 5px 0 !important;
+}
+.vue-input-tag-wrapper.form-control {
+	padding-left: 6px;
+	padding-top: 3px;
+}
+.vue-input-tag-wrapper.form-control .input-tag {
+	height: 22px;
+	padding-top: 1px !important;
+	padding-bottom: 1px !important;
+}
+.vue-input-tag-wrapper.form-control .input-tag .remove {
+	line-height: 20px !important;
+}
+.vue-input-tag-wrapper.default .input-tag {
+	background: #b6c2c9 !important;
+	border-color: #b6c2c9 !important;
+}
+.vue-input-tag-wrapper.inverse .input-tag {
+	background: #2d353c !important;
+	border-color: #2d353c !important;
+}
+.vue-input-tag-wrapper.white .input-tag {
+	background: #fff!important;
+	border: 1px solid #ddd!important;
+	color: #000!important;
+}
+.vue-input-tag-wrapper.white .input-tag .remove {
+	color: #000!important;
+}
+.vue-input-tag-wrapper.info .input-tag {
+	background: #49b6d6 !important;
+	border-color: #49b6d6 !important;
+}
+.vue-input-tag-wrapper.success .input-tag {
+	background: #00acac !important;
+	border-color: #00acac !important;
+}
+.vue-input-tag-wrapper.warning .input-tag {
+	background: #f59c1a !important;
+	border-color: #f59c1a !important;
+}
+.vue-input-tag-wrapper.danger .input-tag {
+	background: #ff5b57 !important;
+	border-color: #ff5b57 !important;
+}
+
+
+/* Highlight JS */
+.hljs-section, .hljs-strong, .hljs-tag {
+	font-weight: 500;
+}
+
+
+/* Vue Sweetalert2 */
+.swal2-icon.swal2-success [class^=swal2-success-line] {
+	background-color: #00acac!important;
+}
+.swal2-icon.swal2-success {
+	border-color: #00acac!important;
+}
+.swal2-icon.swal2-success .swal2-success-ring {
+	border-color: rgba(0,172,172,.2)!important;
+}
+.swal2-icon.swal2-error {
+	border-color: #ff5b57;
+}
+.swal2-icon.swal2-error [class^=swal2-x-mark-line] {
+	background: #ff5b57;
+}
+.swal2-icon.swal2-warning {
+	border-color: #f59c1a;
+	color: #f59c1a;
+}
+.swal2-icon.swal2-info {
+	border-color: #49b6d6;
+	color: #49b6d6;
+}
+.swal2-popup .swal2-styled.swal2-confirm {
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+
+/* Vue Notification */
+.notification.n-light {
+  margin: 10px;
+  margin-bottom: 0;
+  border-radius: 3px;
+  font-size: 13px;
+  padding: 10px 20px;
+  color: #495061;
+  background: #EAF4FE;
+  border: 1px solid #D4E8FD;
+}
+.notification.n-light .notification-title {
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #2589F3;
+}
+.vue-notification.notification {
+	margin: 0 5px 5px;
+}
+.notification.success {
+	background: #00acac;
+	border-left-color: #008a8a;
+}
+.notification.error {
+	background: #ff5b57;
+	border-left-color: #cc4946;
+}
+.notification.warn {
+	background: #f59c1a;
+	border-left-color: #c47d15;
+}
+.notification.custom {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  text-align: left;
+  font-size: 13px;
+  margin: 5px;
+  margin-bottom: 0;
+  align-items: center;
+  justify-content: center;
+  background: #E8F9F0;
+  border: 2px solid #D0F2E1;
+}
+.notification.custom, 
+.notification.custom > div {
+	box-sizing: border-box;
+}
+.notification.custom .custom-icon {
+	flex: 0 1 auto;
+	color: #15C371;
+	font-size: 32px;
+	padding: 0 10px;
+}
+.notification.custom .custom-close {
+	flex: 0 1 auto;
+	padding: 0 20px;
+	font-size: 16px;
+	opacity: 0.2;
+	cursor: pointer;
+	&:hover {
+		opacity: 0.8;
+	}
+}
+.notification.custom .custom-content {
+	padding: 10px;
+	flex: 1 0 auto;
+}
+.notification.custom .custom-content .custom-title {
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-size: 10px;
+	font-weight: 600;
+}
+.v-fade-left-enter-active,
+.v-fade-left-leave-active,
+.v-fade-left-move {
+  transition: all .5s;
+}
+.v-fade-left-enter,
+.v-fade-left-leave-to {
+  opacity: 0;
+  transform: translateX(-500px) scale(0.2);
+}
+
+
+/* Social Button */
+.btn.btn-social {
+	padding-left: 44px;
+}
+
+
+/* Bootstrap Datetimepicker */
+.bootstrap-datetimepicker-widget .fa.fa-trash-o {
+	font-family: Font Awesome\ 5 Free, Font Awesome\ 5 Pro, FontAwesome !important;
+	font-weight: 900;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+}
+.bootstrap-datetimepicker-widget .fa.fa-trash-o:before {
+	content: '\f2ed';
+}
+
+
+/* Vue Datepicker */
+.vdp-datepicker input[readonly] {
+	opacity: 1;
+}
+.vdp-datepicker .vdp-datepicker__calendar {
+	border: none;
+	box-shadow: 0 5px 30px 0 rgba(0,0,0,.25);
+	padding: 5px;
+	border-radius: 6px;
+}
+.vdp-datepicker.inline .vdp-datepicker__calendar {
+	box-shadow: none;
+	padding: 0;
+}
+.vdp-datepicker__calendar .cell.day-header,
+.vdp-datepicker__calendar header span {
+	font-size: 12px;
+	font-weight: 700;
+	color: #2d353c;
+}
+.vdp-datepicker__calendar header span {
+	font-size: 16px;
+}
+.vdp-datepicker__calendar .cell {
+	height: 32px;
+	line-height: 32px;
+	color: #2d353c;
+	border: none;
+}
+.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).day:hover, 
+.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).month:hover, 
+.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).year:hover {
+	border: none;
+	border-radius: 4px;
+	background: #eee;
+	color: #2d353c;
+}
+.vdp-datepicker__calendar .cell.selected {
+	border: none;
+	background: #348fe2 !important;
+	color: #fff !important;
+	border-radius: 4px;
+}
+
+
+/* Vue Select */
+.v-select .dropdown-toggle {
+	border: 1px solid #d3d8de;
+	padding: 0;
+}
+.v-select input[type=search], 
+.v-select input[type=search]:focus {
+	height: 32px;
+	margin: 0;
+	border: none;
+}
+.v-select .dropdown-toggle:after {
+	display: none;
+}
+.v-select .vs__actions {
+	padding: 0 7px;
+}
+.v-select .selected-tag {
+	margin: 0 5px;
+}
+.v-select .open-indicator:before {
+	width: 8px;
+	height: 8px;
+	border-width: 2px 2px 0 0 !important;
+	transform: rotate(133deg) !important;
+}
+.v-select .dropdown-toggle .clear {
+	margin-right: 10px;
+}
+.v-select .dropdown-menu {
+	padding: 0;
+	border: none;
+	box-shadow: 0 5px 30px 0 rgba(0,0,0,.25);
+}
+.v-select .dropdown-menu>.highlight>a {
+	background: #348fe2;
+	color: #fff;
+}
+
+
+/* Vue Colorpicker */
+.input-group-append .input-group-text .vue-colorpicker,
+.input-group-prepend .input-group-text .vue-colorpicker {
+	border: none;
+	padding: 0;
+	height: auto;
+	margin: 0 -6px;	
+}
+.input-group-append .input-group-text .vue-colorpicker-btn,
+.input-group-prepend .input-group-text .vue-colorpicker-btn {
+	border: none;
+  border-radius: 3px;
+}
+
+
+/* Vue Slider Component */
+.vue-slider-component .vue-slider-process {
+	background: #348fe2;
+}
+.vue-slider-component .vue-slider-tooltip {
+	background: #2d353c;
+	border-color: #2d353c;
+	font-size: 12px;
+}
+.vue-slider-component .vue-slider {
+	background: #d3d8df;
+}
+
+
+/* Vue Good Table */
+table.vgt-table {
+	font-size: 12px;
+	border: none;
+}
+table.vgt-table th:first-child,
+table.vgt-table td:first-child {
+	border-left: none;
+}
+table.vgt-table th:last-child,
+table.vgt-table td:last-child {
+	border-right: none;
+}
+table.vgt-table th,
+table.vgt-table.bordered th {
+	color: #242a30;
+	font-weight: 600;
+	border-top: none;
+	border-bottom: 1px solid #b6c2c9;
+}
+.vgt-table th.line-numbers, 
+.vgt-table th.vgt-checkbox-col,
+.vgt-table thead th {
+	background: #f2f3f4;
+}
+table.vgt-table.bordered td, 
+table.vgt-table.bordered tbody th,
+table.vgt-table.bordered tbody th {
+	border-color: #e2e7eb;
+}
+.vgt-input, .vgt-select {
+	background: #f2f3f4;
+	font-size: 12px;
+	border: 1px solid #d3d8de;
+}
+.vgt-global-search {
+	padding: 10px;
+	background: #fff;
+	border: none;
+	border-bottom: 1px solid #e2e7eb;
+}
+.vgt-global-search__input .input__icon .magnifying-glass {
+	margin-top: 6px;
+}
+.vgt-input:focus, 
+.vgt-select:focus {
+	border-color: #5db0ff;
+	outline: 0;
+	box-shadow: 0 0 0 0.125rem rgba(52,142,227,.3);
+}
+.vgt-table th.sorting:after,
+.vgt-table thead th.sorting-asc:after, 
+.vgt-table thead th.sorting-desc:after {
+	border-width: 4px;
+	right: 7px;
+	margin-top: -1px;
+}
+.vgt-table th.sorting:after,
+.vgt-table th.sorting:hover:after {
+	border-bottom-color: #348fe2;
+}
+.vgt-table thead th.sorting-desc:after {
+	border-top-color: #348fe2;
+}
+.vgt-wrap__footer {
+	border: none;
+}
+.vgt-wrap__footer .footer__row-count__select {
+	background: #fff;
+	border: 1px solid #d3d8de;
+	font-size: 12px;
+	color: #242a30;
+}
+.vgt-wrap__footer .footer__row-count__label {
+	font-size: 12px;
+	color: #242a30;
+}
+.vgt-wrap__footer .footer__navigation__page-btn {
+	color: #242a30;
+	font-weight: 600;
+}
+.vgt-wrap__footer .footer__navigation {
+	font-size: 12px;
+}
+.vgt-wrap__footer .footer__navigation__page-btn .chevron.right::after {
+	border-left-color: #348fe2;
+}
+.vgt-wrap__footer .footer__navigation__page-btn .chevron.left::after {
+	border-right-color: #348fe2;
+}
+.vgt-selection-info-row {
+	background: #fff4b2;
+	color: #806d00;
+	border: none;
+	padding: 10px 15px;
+}
+
+
+/* Countdown */
+.is-countdown {
+	border: 1px solid #ccc;
+	background-color: #eee;
+}
+.countdown-rtl {
+	direction: rtl;
+}
+.countdown-holding span {
+	color: #888;
+}
+.countdown-row {
+	clear: both;
+	width: 100%;
+	padding: 0px 2px;
+	text-align: center;
+}
+.countdown-show1 .countdown-section {
+	width: 98%;
+}
+.countdown-show2 .countdown-section {
+	width: 48%;
+}
+.countdown-show3 .countdown-section {
+	width: 32.5%;
+}
+.countdown-show4 .countdown-section {
+	width: 24.5%;
+}
+.countdown-show5 .countdown-section {
+	width: 19.5%;
+}
+.countdown-show6 .countdown-section {
+	width: 16.25%;
+}
+.countdown-show7 .countdown-section {
+	width: 14%;
+}
+.countdown-section {
+	display: block;
+	float: left;
+	font-size: 75%;
+	text-align: center;
+}
+.countdown-amount {
+    font-size: 200%;
+}
+.countdown-period {
+    display: block;
+}
+.countdown-descr {
+	display: block;
+	width: 100%;
+}
+
+
+/* Mobile Sidebar */
+.mobile-click {
+	display: none;
+	z-index: 1025;
+}
+@media (max-width: 767px) {
+	.page-sidebar-toggled .mobile-click,
+	.page-right-sidebar-toggled .mobile-click {
+		position: fixed;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		display: block;
+	}
+}
+
+
+/* ins progress */
+.ins-progress {
+	background: #00acac !important;
+}
