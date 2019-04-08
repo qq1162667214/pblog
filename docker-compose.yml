@@ -1,0 +1,21 @@
+version: "2.0"
+services:
+  nginx:
+    build: ./nginx
+    image: nginx:latest
+    volumes:
+      - /usr/src/app
+    ports:
+      - "8888:8888"
+
+  vue:
+    build: ./frontend/pblog
+    expose:
+      - "80"
+  django:
+    build: .
+    expose:
+      - "8000"
+    volumes:
+      - /usr/src/app
+    command: gunicorn --chdir app pblog.wsgi -w 4 -k gevent -b 0.0.0.0:8000
